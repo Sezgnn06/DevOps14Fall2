@@ -1,0 +1,10 @@
+---
+- name: Install epel-release repo
+      yum:
+        name: epel-release
+        state: present
+- name: Install required packages
+  yum:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ package_list }}"        
