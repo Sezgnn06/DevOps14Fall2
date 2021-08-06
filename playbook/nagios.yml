@@ -1,6 +1,0 @@
----
-- name: Running nagios /home/ansible/oleg.nagios-server
-  hosts: 10.0.0.152
-  become: yes
-  roles:
-    - /home/ansible/oleg.nagios-server
